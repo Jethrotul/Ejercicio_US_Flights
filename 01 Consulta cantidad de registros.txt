@@ -1,0 +1,4 @@
+SELECT count(flightID) as n_vuelos
+
+
+FROM usairlineflights2.flights;

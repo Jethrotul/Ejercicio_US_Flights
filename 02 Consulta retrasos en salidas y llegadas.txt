@@ -1,0 +1,5 @@
+SELECT origin, avg(ArrDelay) as prom_arribades, avg(DepDelay) as prom_sortides
+
+FROM usairlineflights2.flights
+
+GROUP BY origin
