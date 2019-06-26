@@ -1,0 +1,10 @@
+SELECT UniqueCarrier, avg(ArrDelay) as delay
+FROM usairlineflights2.flights
+
+where Cancelled = 0
+
+group by UniqueCarrier
+
+having delay >10
+
+order by delay desc

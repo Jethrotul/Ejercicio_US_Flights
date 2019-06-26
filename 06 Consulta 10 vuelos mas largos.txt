@@ -1,0 +1,7 @@
+SELECT TailNum, Distance 
+
+FROM usairlineflights2.flights
+
+order by Distance desc
+
+limit 10

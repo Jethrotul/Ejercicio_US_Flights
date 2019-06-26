@@ -1,0 +1,7 @@
+SELECT UniqueCarrier, colYear, colMonth, sum(Cancelled) as cancelados
+
+FROM usairlineflights2.flights
+
+group by UniqueCarrier, colYear, colMonth
+
+order by cancelados desc
