@@ -1,0 +1,9 @@
+SELECT city,  colYear, colMonth, avg(ArrDelay)
+
+FROM usairlineflights2.flights, usairlineflights2.usairports
+
+where usairlineflights2.flights.Origin = usairlineflights2.usairports.IATA
+
+group by City, colYear, colMonth
+
+order by City, colYear, colMonth
