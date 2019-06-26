@@ -1,3 +1,0 @@
-SELECT origin, colYear, colMonth, DepDelay
-FROM usairlineflights2.flights
-order by origin, colYear asc, colMonth
