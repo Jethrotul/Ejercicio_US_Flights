@@ -4,4 +4,4 @@ FROM usairlineflights2.flights
 
 group by Origin, colYear, colMonth
 
-order by origin, colYear, colMonth
+order by origin, colYear, colMonth desc

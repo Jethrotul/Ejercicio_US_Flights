@@ -1,7 +1,11 @@
-SELECT TailNum, Distance 
+SELECT TailNum, sum(Distance) as suma
 
 FROM usairlineflights2.flights
 
-order by Distance desc
+where TailNum<>''
+
+group by TailNum
+
+order by suma desc
 
 limit 10
