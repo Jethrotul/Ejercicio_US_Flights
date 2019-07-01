@@ -1,4 +1,4 @@
-SELECT UniqueCarrier, colYear, colMonth, sum(Cancelled) as cancelados
+SELECT UniqueCarrier, colYear, colMonth, avg(arrdelay), sum(Cancelled) as cancelados
 
 FROM usairlineflights2.flights
 
